@@ -1,0 +1,5 @@
+"credentials/" 
+credentials/  .env  logs/  config/ 
+logs/ 
+__pycache__/ 
+*.pyc 

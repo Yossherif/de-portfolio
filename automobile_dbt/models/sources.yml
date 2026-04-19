@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: automobile
+    project: expanded-flame-491820-j2
+    dataset: automobile
+    tables:
+      - name: automobile
