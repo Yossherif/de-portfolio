@@ -83,26 +83,27 @@ Stack
 
 Project Structure
 
+```
 de-portfolio/
-├── Automobile_ETL.ipynb               # Automobile dataset ETL pipeline
-├── Weather_Pipeline.ipynb             # Live Cairo weather API pipeline
-├── automobile_dbt/                    # dbt transformation project
-│   ├── models/
-│   │   ├── staging/
-│   │   │   └── stg_automobile.sql
-│   │   └── marts/
-│   │       ├── mart_automobile_summary.sql
-│   │       └── mart_make_summary.sql
-│   ├── models/schema.yml
-│   ├── models/sources.yml
-│   └── dbt_project.yml
-├── airflow-pipeline/                  # Airflow orchestration
-│   ├── dags/
-│   │   ├── automobile_pipeline.py
-│   │   └── weather_pipeline.py
-│   └── docker-compose.yaml
-└── README.md
----
+    Automobile_ETL.ipynb
+    Weather_Pipeline.ipynb
+    automobile_dbt/
+        dbt_project.yml
+        models/
+            sources.yml
+            schema.yml
+            staging/
+                stg_automobile.sql
+            marts/
+                mart_automobile_summary.sql
+                mart_make_summary.sql
+    airflow-pipeline/
+        docker-compose.yaml
+        dags/
+            automobile_pipeline.py
+            weather_pipeline.py
+    README.md
+```
 
 Setup and Running Locally
 
