@@ -84,25 +84,10 @@ Stack
 Project Structure
 
 ```
-de-portfolio/
-    Automobile_ETL.ipynb
-    Weather_Pipeline.ipynb
-    automobile_dbt/
-        dbt_project.yml
-        models/
-            sources.yml
-            schema.yml
-            staging/
-                stg_automobile.sql
-            marts/
-                mart_automobile_summary.sql
-                mart_make_summary.sql
-    airflow-pipeline/
-        docker-compose.yaml
-        dags/
-            automobile_pipeline.py
-            weather_pipeline.py
-    README.md
+The repository contains three main folders:
+Root — Automobile_ETL.ipynb, Weather_Pipeline.ipynb
+automobile_dbt/ — dbt project with staging and mart models. Models are inside models/staging/ and models/marts/.
+airflow-pipeline/ — Dockerized Airflow setup. DAGs are inside dags/.
 ```
 
 Setup and Running Locally
